@@ -1,7 +1,7 @@
 .cs {
-  max-width: 800px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: var(--space-2xl) var(--space-xl);
+  padding: 0 var(--space-xl) var(--space-2xl);
 }
 
 .cs-back {
@@ -11,7 +11,8 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--color-text-primary);
-  margin-bottom: var(--space-xl);
+  padding-top: var(--space-xl);
+  margin-bottom: var(--space-lg);
   border-bottom: 2px solid transparent;
   padding-bottom: 2px;
   transition: border-color 0.15s;
@@ -22,8 +23,8 @@
 }
 
 .cs-header {
+  padding: var(--space-lg) 0;
   margin-bottom: var(--space-xl);
-  padding-bottom: var(--space-xl);
   border-bottom: var(--border);
 }
 
@@ -49,24 +50,23 @@
 
 .cs-title {
   font-family: var(--font-display);
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 400;
   line-height: 1;
   margin-bottom: var(--space-md);
 }
 
 .cs-tagline {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   color: var(--grey-800);
-  max-width: 600px;
 }
 
 .cs-meta {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--space-md);
-  padding: var(--space-xl) 0;
+  padding: var(--space-lg) 0;
   border-bottom: var(--border);
   margin-bottom: var(--space-xl);
 }
@@ -86,7 +86,7 @@
 }
 
 .cs-meta-value {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--color-text-primary);
   line-height: 1.4;
 }
@@ -119,6 +119,8 @@
 
 .cs-overview {
   margin-bottom: var(--space-2xl);
+  padding-bottom: var(--space-xl);
+  border-bottom: var(--border);
 }
 
 .cs-section-title {
@@ -126,7 +128,13 @@
   font-size: 28px;
   font-weight: 400;
   margin-bottom: var(--space-md);
-  color: var(--color-text-primary);
+}
+
+.cs-overview p,
+.cs-section p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--grey-800);
 }
 
 .cs-sections {
@@ -141,13 +149,6 @@
   border-top: var(--border-thin);
 }
 
-.cs-section p,
-.cs-overview p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: var(--grey-800);
-}
-
 .cs-footer {
   padding-top: var(--space-xl);
   border-top: var(--border);
@@ -160,4 +161,18 @@
   flex-direction: column;
   gap: var(--space-md);
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .cs {
+    padding: 0 var(--space-md) var(--space-2xl);
+  }
+
+  .cs-title {
+    font-size: 36px;
+  }
+
+  .cs-meta {
+    grid-template-columns: 1fr 1fr;
+  }
 }

@@ -43,21 +43,21 @@
   ],
   "caseStudies": [
     {
-      "id": "asobal",
+  "id": "asobal",
       "title": "Asobal x Ironhack Hackathon",
       "shortTitle": "Asobal Hackathon",
       "labels": ["UX Strategy", "36hrs", "1st Prize"],
       "nda": false,
       "tagline": "When the brief says build an app, sometimes the right answer is to build the case for why that app needs to exist first.",
-      "overview": "Asobal, the Spanish handball league, came to Ironhack with three briefs: service design, data analysis, and a new fan-facing app. Our cross-functional team had 36 hours to respond. Early in the process we made a deliberate call: instead of rushing to design polished screens, we would focus on producing a strategic proposal that Asobal could actually use. The project was awarded 1st Prize.",
-      "role": "UX Researcher, UI Designer",
-      "team": "3 UX/UI Designers, 1 Data Analyst, 1 Frontend Developer",
+      "overview": "Asobal, the Spanish handball league, came to Ironhack with three briefs: service design, data analysis, and a new fan-facing app. Our cross-functional team (three UX/UI designers, a data analyst, and a frontend developer) had 36 hours to respond. Early in the process we made a deliberate call: instead of rushing to design polished screens, we would focus on producing a strategic proposal that Asobal could actually use. The screens would illustrate the concept. The real deliverable was the thinking behind them. The project was awarded 1st Prize.",
+      "role": "UX Researcher · UI Designer",
+      "team": "3 UX/UI Designers · 1 Data Analyst · 1 Frontend Developer",
       "duration": "36 hours",
       "status": "Delivered to client",
       "sections": [
         {
           "title": "Research",
-          "content": "We started by talking to fans. Through surveys (400+ responses) and interviews, a clear pattern emerged: the average handball fan is 40+, younger age groups were shrinking, and the people who did follow the sport had no community infrastructure to sustain their engagement. People do not stop watching handball because they lose interest. They stop because there is nothing to do between matches, no one to do it with, and the sport is hard to follow if no one explains it to you."
+          "content": "We started by talking to fans. Through surveys (400+ responses) and interviews, a clear pattern emerged: the average handball fan is 40+, younger age groups were shrinking, and the people who did follow the sport had no community infrastructure to sustain their engagement. Key insight from interviews: people don't stop watching handball because they lose interest. They stop because there's nothing to do between matches, no one to do it with, and the sport is genuinely hard to follow if no one explains it to you. The data analyst on the team also surfaced a structural problem: Asobal had almost no usable fan data. The data existed in silos but wasn't accessible in any structured way, which meant their marketing team was operating blind."
         },
         {
           "title": "Define",
@@ -65,19 +65,25 @@
         },
         {
           "title": "Proposal",
-          "content": "Rather than designing a feature list, we structured the proposal around what Asobal would get out of it, not just what fans would experience. Three pillars: team-first personalisation (onboarding built around team allegiance), virtual fan clubs with gamification (weekly challenges, in-stadium activations), and a structured data pipeline (every interaction feeds structured data back to the organisation)."
+          "content": "Rather than designing a feature list, we structured the proposal around what Asobal would get out of it, not just what fans would experience. The app concept had three pillars: team-first personalisation (onboarding built around team allegiance, with a home screen filtered to what matters to that fan specifically), virtual fan clubs with gamification (a community layer where fans could compete in weekly handball knowledge challenges, earning points for their club, extended to live in-stadium activations during half-time), and a structured data pipeline (the app as a mechanism for Asobal to finally build a usable fan database, where every interaction feeds structured data back to the organisation)."
         },
         {
           "title": "Reflection",
-          "content": "The constraint of 36 hours forced good prioritisation. The collaboration between design and data was the real differentiator. As a sprint deliverable the proposal was a starting point, not a finished product. A real-world implementation would require deeper validation, iteration, and more time. But as a structured response to a complex brief under pressure, it held up."
+          "content": "The constraint of 36 hours forced good prioritisation. We couldn't design everything so we designed what mattered. The collaboration between design and data was the real differentiator. The data analyst reframed how we thought about the brief, and the strategic proposal we built together was stronger than anything we could have produced in separate lanes. As a 36-hour sprint deliverable the proposal was a starting point, not a finished product. A real-world implementation would require deeper validation, iteration, and a lot more time. But as a structured response to a complex brief under pressure, it held up."
         }
-      ]
-    }
-  ,{
+]
+      
+    },
+    {
       "id": "app-directory",
       "title": "App Directory Revamp",
       "shortTitle": "App Directory",
-      "labels": ["UX Research", "Information Architecture", "End-to-end", "NDA"],
+      "labels": [
+        "UX Research",
+        "Information Architecture",
+        "End-to-end",
+        "NDA"
+      ],
       "nda": true,
       "tagline": "What was scoped as a UI refresh became a structural redesign once research showed the real problems were not visual.",
       "overview": "The internal app directory was a legacy tool built before the company's current React and design standards existed. It was slow to maintain, hard to navigate, and had low adoption. Most people either bookmarked apps directly or asked colleagues instead of using the directory. The initial brief was to modernise the UI. Research changed the scope.",
@@ -99,12 +105,17 @@
           "content": "Restructured information architecture based on user mental models, cleaner data ownership through CMDB integration, full revamp aligned with internal React standards across all breakpoints, and new features including favourites, quick-access links, issue reporting, and AI-powered search. The most meaningful outcome was demonstrating internally what a full UX process looks like and how research changes the decisions you make."
         }
       ]
-    }
-  ,{
+     
+    },
+    {
       "id": "operational-tool",
       "title": "Operational Management Tool",
       "shortTitle": "Operational Tool",
-      "labels": ["UX Design", "Pattern Documentation", "NDA"],
+      "labels": [
+        "UX Design",
+        "Pattern Documentation",
+        "NDA"
+      ],
       "nda": true,
       "tagline": "The scope was vague, the timeline was unrealistic, and the team would eventually ship it without a designer. The goal was to make that last part work.",
       "overview": "A risk manager approached with a broad idea for an internal operational tool. The scope was undefined, stakeholders were unfamiliar with agile workflows, and the datasets involved were large and structurally inconsistent across entities. I was removed from the project before implementation began. The team shipped it without ongoing design support.",
@@ -130,12 +141,17 @@
           "content": "The application was successfully implemented and is in use. New data types have been introduced by the team without design involvement, following the established patterns."
         }
       ]
-    }
- ,{
+  
+    },
+    {
       "id": "component-library",
       "title": "Component Library and Design System Scaffolding",
       "shortTitle": "Component Library",
-      "labels": ["Design System Scaffolding", "Component Library", "NDA"],
+      "labels": [
+        "Design System Scaffolding",
+        "Component Library",
+        "NDA"
+      ],
       "nda": true,
       "tagline": "Building the foundation for consistency in an organisation that did not have one yet.",
       "overview": "This project involved building an internal component library from scratch and establishing the foundations for a design system in an organisation with low UX maturity. To be upfront about scope: this was not a full design system in the way Carbon or SAP Fiori are. What was built was a solid, growing component library with documented patterns and token foundations. The scaffolding for something larger, not the finished structure.",
@@ -161,6 +177,7 @@
           "content": "A growing, maintainable library built on atomic design principles, increased consistency across internal applications, faster design and development cycles through shared references, and token foundations in place as a base for a future full design system. The value shows up in the reduction of repeated decisions, in developers not needing to ask what a component should do, and in designers being able to focus on problems instead of re-creating building blocks."
         }
       ]
+   
     }
   ]
 }
