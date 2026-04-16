@@ -1,0 +1,124 @@
+.dd-header {
+  padding: var(--space-xl);
+  border-bottom: var(--border);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-xl);
+}
+
+.dd-title {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.dd-title span {
+  color: var(--color-accent);
+}
+
+.dd-sub {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--grey-500);
+  max-width: 300px;
+  line-height: 1.5;
+  text-align: right;
+}
+
+.dd-sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.dd-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: var(--border);
+  min-height: 320px;
+}
+
+.dd-item-header {
+  padding: var(--space-xl);
+  border-right: var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  justify-content: center;
+}
+
+.dd-item-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.dd-item-title {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.dd-item-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--grey-800);
+}
+
+.dd-item-gallery {
+  background: var(--grey-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dd-gallery-placeholder {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--grey-500);
+  letter-spacing: 1px;
+}
+
+.dd-footer {
+  padding: var(--space-xl);
+  border-top: var(--border);
+}
+
+@media (max-width: 768px) {
+  .dd-header {
+    flex-direction: column;
+    padding: var(--space-lg) var(--space-md);
+    gap: var(--space-md);
+  }
+
+  .dd-title {
+    font-size: 44px;
+  }
+
+  .dd-sub {
+    text-align: left;
+  }
+
+  .dd-item {
+    grid-template-columns: 1fr;
+  }
+
+  .dd-item-header {
+    border-right: none;
+    border-bottom: var(--border);
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .dd-item-gallery {
+    min-height: 200px;
+  }
+
+  .dd-footer {
+    padding: var(--space-lg) var(--space-md);
+  }
+}
