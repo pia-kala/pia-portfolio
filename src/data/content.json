@@ -54,6 +54,12 @@
       "team": "3 UX/UI Designers · 1 Data Analyst · 1 Frontend Developer",
       "duration": "36 hours",
       "status": "Delivered to client",
+      "_images": [
+        { "src": "asobal-persona.png", "caption": "User persona developed from survey data and fan interviews" },
+        { "src": "asobal-home-screen.png", "caption": "Home screen: team-first personalisation on entry" },
+        { "src": "asobal-challenge-screen.png", "caption": "Challenge screen: gamified fan club competition" },
+        { "src": "asobal-fanclub-screen.png", "caption": "Fan club screen: community infrastructure proposal" }
+      ],
       "sections": [
         {
           "title": "Research",
@@ -81,8 +87,7 @@
       "labels": [
         "UX Research",
         "Information Architecture",
-        "End-to-end",
-        "NDA"
+        "End-to-end"
       ],
       "nda": true,
       "tagline": "What was scoped as a UI refresh became a structural redesign once research showed the real problems were not visual.",
@@ -113,8 +118,7 @@
       "shortTitle": "Operational Tool",
       "labels": [
         "UX Design",
-        "Pattern Documentation",
-        "NDA"
+        "Pattern Documentation"
       ],
       "nda": true,
       "tagline": "The scope was vague, the timeline was unrealistic, and the team would eventually ship it without a designer. The goal was to make that last part work.",
@@ -149,8 +153,7 @@
       "shortTitle": "Component Library",
       "labels": [
         "Design System Scaffolding",
-        "Component Library",
-        "NDA"
+        "Component Library"
       ],
       "nda": true,
       "tagline": "Building the foundation for consistency in an organisation that did not have one yet.",

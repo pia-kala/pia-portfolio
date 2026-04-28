@@ -1,0 +1,176 @@
+// content.js — portfolio data, mirrors src/data/content.json
+window.CONTENT = {
+  meta: {
+    name: "Pía",
+    fullName: "Paula Vargas",
+    role: "UX/UI Designer",
+    location: "Switzerland",
+    email: "mpaula.vm@gmail.com",
+    linkedin: "https://www.linkedin.com/in/paula-vargas-8616a611b/",
+    instagram_illustration: "https://www.instagram.com/pias.drama",
+    instagram_photography: "https://www.instagram.com/pistacci.raw"
+  },
+  about: {
+    intro: "Hi, I am Paula, but everyone calls me Pia. I am a UX/UI Designer with a background in Fine Arts and a Masters in Cognitive Sciences.",
+    paragraphs: [
+      "I am especially interested in what happens when people, information, and time pressure meet. I enjoy understanding how people think and work in real contexts, and designing digital systems that make those situations clearer and more manageable.",
+      "My path into UX started through visual communication and evolved into research, information architecture, and system design. I have worked with multidisciplinary teams from early discovery to implementation, translating research insights into structured interfaces and collaborating closely with developers to make sure ideas hold up in the real world.",
+      "Coming from the arts, I naturally care about clarity and composition. Studying cognitive science made me more aware of how attention, memory, and decision-making actually work. That combination still guides how I approach design.",
+      "I am curious by nature, comfortable with complexity, and most motivated by projects where design genuinely helps people do their work better. Currently based in Switzerland. Open to opportunities."
+    ]
+  },
+  disasterDrawer: [
+    {
+      id: "pias-drama",
+      title: "Pias Drama",
+      label: "ILLUSTRATION",
+      description: "An ongoing webcomic about the small disasters of everyday life. The character started as a self-portrait and became something slightly more chaotic than me (or exactly as chaotic, depending on who you ask).",
+      link: "https://www.instagram.com/pias.drama"
+    },
+    {
+      id: "random-rolls",
+      title: "Random Rolls",
+      label: "PHOTOGRAPHY",
+      description: "Mostly phone lately because film is exxxxpen$$$ive and I have absolutely no restraint when there is a camera in my hand. A lot of these have never been published. They are here now.",
+      link: "https://www.instagram.com/pistacci.raw"
+    },
+    {
+      id: "the-dump",
+      title: "The Dump",
+      label: "SKETCHES · EXPERIMENTS · OTHER",
+      description: "Illustration styles I was trying out, videos, half-finished things. No brief, no audience in mind. Just an idea that was happening.",
+      link: null
+    }
+  ],
+  caseStudies: [
+    {
+      id: "asobal",
+      title: "Asobal x Ironhack Hackathon",
+      shortTitle: "Asobal Hackathon",
+      labels: ["UX STRATEGY", "36 HRS", "1ST PRIZE"],
+      nda: false,
+      tagline: "When the brief says build an app, sometimes the right answer is to build the case for why that app needs to exist first.",
+      overview: "Asobal, the Spanish handball league, came to Ironhack with three briefs: service design, data analysis, and a new fan-facing app. Our cross-functional team (three UX/UI designers, a data analyst, and a frontend developer) had 36 hours to respond. Early in the process we made a deliberate call: instead of rushing to design polished screens, we would focus on producing a strategic proposal that Asobal could actually use. The screens would illustrate the concept. The real deliverable was the thinking behind them. The project was awarded 1st Prize.",
+      role: "UX Researcher · UI Designer",
+      team: "3 UX/UI Designers · 1 Data Analyst · 1 Frontend Developer",
+      duration: "36 hours",
+      status: "Delivered to client",
+      images: [
+        { src: "assets/asobal-persona.png", caption: "User persona developed from survey data and fan interviews" },
+        { src: "assets/asobal-home-screen.png", caption: "Home screen: team-first personalisation on entry" },
+        { src: "assets/asobal-challenge-screen.png", caption: "Challenge screen: gamified fan club competition" },
+        { src: "assets/asobal-fanclub-screen.png", caption: "Fan club screen: community infrastructure proposal" }
+      ],
+      sections: [
+        {
+          title: "Research",
+          content: "We started by talking to fans. Through surveys (400+ responses) and interviews, a clear pattern emerged: the average handball fan is 40+, younger age groups were shrinking, and the people who did follow the sport had no community infrastructure to sustain their engagement. Key insight from interviews: people don't stop watching handball because they lose interest. They stop because there's nothing to do between matches, no one to do it with, and the sport is genuinely hard to follow if no one explains it to you. The data analyst on the team also surfaced a structural problem: Asobal had almost no usable fan data. The data existed in silos but wasn't accessible in any structured way, which meant their marketing team was operating blind."
+        },
+        {
+          title: "Define",
+          content: "The core problems: fans aging out with no pipeline of younger replacements, loss of community among existing fans, no mechanism for Asobal to learn from or reach their audience, and handball being difficult to understand for newcomers."
+        },
+        {
+          title: "Proposal",
+          content: "Rather than designing a feature list, we structured the proposal around what Asobal would get out of it, not just what fans would experience. The app concept had three pillars: team-first personalisation (onboarding built around team allegiance, with a home screen filtered to what matters to that fan specifically), virtual fan clubs with gamification (a community layer where fans could compete in weekly handball knowledge challenges, earning points for their club, extended to live in-stadium activations during half-time), and a structured data pipeline (the app as a mechanism for Asobal to finally build a usable fan database, where every interaction feeds structured data back to the organisation)."
+        },
+        {
+          title: "Reflection",
+          content: "The constraint of 36 hours forced good prioritisation. We couldn't design everything so we designed what mattered. The collaboration between design and data was the real differentiator. The data analyst reframed how we thought about the brief, and the strategic proposal we built together was stronger than anything we could have produced in separate lanes. As a 36-hour sprint deliverable the proposal was a starting point, not a finished product. A real-world implementation would require deeper validation, iteration, and a lot more time. But as a structured response to a complex brief under pressure, it held up."
+        }
+      ]
+    },
+    {
+      id: "app-directory",
+      title: "App Directory Revamp",
+      shortTitle: "App Directory",
+      labels: ["UX RESEARCH", "INFO ARCHITECTURE", "END-TO-END", "NDA"],
+      nda: true,
+      tagline: "What was scoped as a UI refresh became a structural redesign once research showed the real problems were not visual.",
+      overview: "The internal app directory was a legacy tool built before the company's current React and design standards existed. It was slow to maintain, hard to navigate, and had low adoption. Most people either bookmarked apps directly or asked colleagues instead of using the directory. The initial brief was to modernise the UI. Research changed the scope.",
+      role: "UX/UI Designer (Research, IA, Implementation Lead)",
+      team: "2 UX/UI Designers (research), 1 UX/UI Designer and multiple Frontend and Backend Developers (implementation)",
+      duration: "Two phases",
+      status: "Released (Hypercare)",
+      images: [],
+      sections: [
+        {
+          title: "Research Phase",
+          content: "User interviews revealed that the UI was not the problem. The underlying information architecture was broken: categories were ambiguous, search was unreliable, and many links were outdated or missing. Several users had not even known the directory existed until the interview. The app directory database was also maintained separately from the company CMDB, creating multiple disconnected data sources with no single point of truth."
+        },
+        {
+          title: "Design and Implementation",
+          content: "A significant part of the work was not UI-related. A large manual content cleanup was required across departments. One of the most impactful solutions was a connection to the internal CMDB, meaning app owners could manage their own directory entry by checking a checkbox and adding a production link. For third-party tools not in the CMDB, a dedicated admin module was built. The project also involved creating content guidelines and best practice documentation."
+        },
+        {
+          title: "Outcome",
+          content: "Restructured information architecture based on user mental models, cleaner data ownership through CMDB integration, full revamp aligned with internal React standards across all breakpoints, and new features including favourites, quick-access links, issue reporting, and AI-powered search. The most meaningful outcome was demonstrating internally what a full UX process looks like and how research changes the decisions you make."
+        }
+      ]
+    },
+    {
+      id: "operational-tool",
+      title: "Operational Management Tool",
+      shortTitle: "Operational Tool",
+      labels: ["UX DESIGN", "PATTERN DOCS", "NDA"],
+      nda: true,
+      tagline: "The scope was vague, the timeline was unrealistic, and the team would eventually ship it without a designer. The goal was to make that last part work.",
+      overview: "A risk manager approached with a broad idea for an internal operational tool. The scope was undefined, stakeholders were unfamiliar with agile workflows, and the datasets involved were large and structurally inconsistent across entities. I was removed from the project before implementation began. The team shipped it without ongoing design support.",
+      role: "UX/UI Designer (Scope definition, design decisions, handoff)",
+      team: "1 UX/UI Designer, 2 Frontend Developers, 1 Backend Developer, 1 Risk Manager",
+      duration: "Multiple sprints",
+      status: "Delivered and in use without ongoing design support",
+      images: [],
+      sections: [
+        {
+          title: "Discovery",
+          content: "The first phase was clarifying what the project actually was. Through sessions with the stakeholder, end users, and engineers, I mapped the initial workflow and identified where the proposed scope exceeded what was feasible within the committed timeline. The rescoped workflow narrowed the focus to what would deliver real value without creating technical debt that would block future iterations."
+        },
+        {
+          title: "Design",
+          content: "The central challenge was designing for variable data. Different entities had different data structures, but the interface needed to feel consistent regardless of what was being displayed. The solution was a level-based layout pattern (an overview and object page structure where on-screen elements triggered data drawers with progressively more detail). The pattern stayed the same; the data inside changed. This reduced cognitive load and gave users consistent interaction triggers even when content shifted significantly between use cases."
+        },
+        {
+          title: "Handoff",
+          content: "Standard Jira tickets were not going to be enough for a team shipping without design oversight. Each ticket was written to function both as an implementation task and as pattern documentation. Specs lived in Figma; the same information was reproduced in Jira in a format the development team could work from directly. The goal was that any developer picking up a ticket would understand not just what to build, but why the pattern worked the way it did and how to extend it to new data types independently."
+        },
+        {
+          title: "Outcome",
+          content: "The application was successfully implemented and is in use. New data types have been introduced by the team without design involvement, following the established patterns."
+        }
+      ]
+    },
+    {
+      id: "component-library",
+      title: "Component Library and Design System Scaffolding",
+      shortTitle: "Component Library",
+      labels: ["DESIGN SYSTEM", "COMPONENT LIBRARY", "NDA"],
+      nda: true,
+      tagline: "Building the foundation for consistency in an organisation that did not have one yet.",
+      overview: "This project involved building an internal component library from scratch and establishing the foundations for a design system in an organisation with low UX maturity. To be upfront about scope: this was not a full design system in the way Carbon or SAP Fiori are. What was built was a solid, growing component library with documented patterns and token foundations. The scaffolding for something larger, not the finished structure.",
+      role: "UX/UI Designer (Component creation, design foundations, system evolution)",
+      team: "Phase 1: 2 UX/UI Designers and 1 Frontend Developer. Phase 2: 5 UX/UI Designers and multiple Frontend Developers",
+      duration: "Two phases (ongoing)",
+      status: "Ongoing",
+      images: [],
+      sections: [
+        {
+          title: "Context",
+          content: "Before this project, there was no shared component library. UI patterns were inconsistent across applications, design and development worked from different references, and each new project re-solved problems that had already been solved elsewhere. The starting point was Material UI, customised to meet internal product needs."
+        },
+        {
+          title: "Phase 1 — Building the foundation",
+          content: "The process for each component followed a consistent pattern: review MUI documentation to understand behaviours, variants, and limitations; conduct additional research (spikes) where usability questions were not answered by the base library; document decisions; create the component in Figma with naming conventions matched to MUI props to reduce developer friction; publish to the internal Storybook. Spike deliverables were written documents backing design decisions, not just outputs but rationale."
+        },
+        {
+          title: "Phase 2 — Evolution and maintenance",
+          content: "A company rebranding triggered a token migration, which coincided with Figma Variables release. Existing components were refactored for consistency, and new components were proposed, aligned with both designers and developers, and implemented into Storybook."
+        },
+        {
+          title: "Outcome",
+          content: "A growing, maintainable library built on atomic design principles, increased consistency across internal applications, faster design and development cycles through shared references, and token foundations in place as a base for a future full design system. The value shows up in the reduction of repeated decisions, in developers not needing to ask what a component should do, and in designers being able to focus on problems instead of re-creating building blocks."
+        }
+      ]
+    }
+  ]
+};

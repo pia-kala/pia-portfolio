@@ -1,30 +1,38 @@
-import { Link } from 'react-router-dom'
 import content from '../data/content.json'
+import aboutMeImg from '../assets/About_me.png'
+import utensilsImg from '../assets/work_utensils.PNG'
 import './About.css'
 
 function About() {
   const { about, meta } = content
 
   return (
-    <main className="about">
-
-      <div className="about-header">
-        <h1 className="about-title">About me</h1>
-      </div>
-
+    <main className="about page">
       <div className="about-grid">
 
-        <div className="about-image">
-          <div className="about-image-placeholder">
-            <span>your illustration goes here</span>
-          </div>
+        {/* LEFT: sticky illustration */}
+        <div className="about-image-col">
+          <img
+            src={aboutMeImg}
+            alt="Pía's character standing, hand on head"
+            className="about-illustration"
+          />
         </div>
 
-        <div className="about-content">
+        {/* RIGHT: text content */}
+        <div className="about-text-col">
+          <span className="about-label">About</span>
+          <h1 className="about-title">Paula (Pía)</h1>
+
           <p className="about-intro">{about.intro}</p>
-          {about.paragraphs.map((paragraph, index) => (
-            <p className="about-paragraph" key={index}>{paragraph}</p>
+
+          <hr className="about-divider" />
+
+          {about.paragraphs.map((p, i) => (
+            <p key={i} className="about-paragraph">{p}</p>
           ))}
+
+          <hr className="about-divider" />
 
           <div className="about-links">
             <a href={meta.linkedin} target="_blank" rel="noreferrer" className="btn-primary">
@@ -34,10 +42,16 @@ function About() {
               Get in touch
             </a>
           </div>
+
+          <img
+            src={utensilsImg}
+            alt=""
+            aria-hidden="true"
+            className="about-utensils"
+          />
         </div>
 
       </div>
-
     </main>
   )
 }
