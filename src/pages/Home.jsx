@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import content from '../data/content.json'
-import heroImg from '../assets/hero.PNG'
+import heroImg from '../assets/hero.png'
 import './Home.css'
 
 function LabelChip({ label }) {
