@@ -1,6 +1,5 @@
 import content from '../data/content.json'
 import aboutMeImg from '../assets/About_me.png'
-import utensilsImg from '../assets/work_utensils.PNG'
 import './About.css'
 
 function About() {
@@ -43,12 +42,6 @@ function About() {
             </a>
           </div>
 
-          <img
-            src={utensilsImg}
-            alt=""
-            aria-hidden="true"
-            className="about-utensils"
-          />
         </div>
 
       </div>
